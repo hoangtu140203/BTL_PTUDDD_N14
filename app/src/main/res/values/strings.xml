@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">BTLPTUDDDN14</string>
+    <string name="app_name">Fima</string>
+    <string name="title_home">Home</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_planning">Planning</string>
+    <string name="lastname">Last name</string>
+    <string name="fistname">First name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeatPw">Repeat your password</string>
+    <string name="ForgetPass">Forget password?</string>
+    <string name="Rememberme">Remember me</string>
+    <string name="tvSignIn">SIGN UP</string>
+    <string name="Oldpassword">Old password</string>
+    <string name="Newpassword">New password</string>
+    <string name="confirmNewpassword">Confirm password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
