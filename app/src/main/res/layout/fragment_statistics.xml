@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:layout_gravity="top"
+    tools:context=".ui.statistics.StatisticsFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top">
+
+
+        <Button
+            android:id="@+id/btndaily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Daily"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textAlignment="textStart"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnweekly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="weekly"
+            android:textAlignment="textStart"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnmonthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="Monthly"
+            android:textAlignment="textStart"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnyearly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="yearly"
+            android:textAlignment="textStart"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/dailyStatistic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/displayDate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="20/11/2023"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/dailyPieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listDailyExpense"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <!-- Màn hình 2 -->
+    <ScrollView
+        android:id="@+id/weeklyStatistic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/displayweek"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="week 48"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/weeklyPieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listWeeklyExpense"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <!--        màn hình 3-->
+    <ScrollView
+        android:id="@+id/monthlyStatistic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/displayMonth"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="November-2023"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/monthlyPieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/monthlyLineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listMonthlyExpense"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <!--        mình hình 4-->
+
+    <ScrollView
+        android:id="@+id/yearlyStatistic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/displayYear"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="2023"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/yearlyPieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                >
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/yearlyLineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listYearlyExpense"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</LinearLayout>
