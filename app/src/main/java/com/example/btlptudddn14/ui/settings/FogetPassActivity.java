@@ -27,7 +27,7 @@ public class FogetPassActivity extends AppCompatActivity {
     Button btnUpdateNewPass, btnCancleNewpass;
     LinearLayout contain3;
 
-    @Override @SuppressLint("MissingInflatedId")
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_foget_pass);
