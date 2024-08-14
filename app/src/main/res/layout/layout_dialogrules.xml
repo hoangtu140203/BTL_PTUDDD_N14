@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_color_16"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Terms of use of the application"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white_color_16">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size16sp"
+            android:text= "1. Acceptance of Terms"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size16sp"
+            android:textColor="@color/black"
+            android:text="By downloading and using the app, you agree to the terms and conditions described below."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size16sp"
+            android:text= "2. Privacy Rights"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size16sp"
+            android:textColor="@color/black"
+            android:text="We respect your privacy and are committed to protecting any personal information you provide."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size16sp"
+            android:text= "3. Data Collection"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size16sp"
+            android:textColor="@color/black"
+            android:text="We may collect personal information from you to provide app features and services."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size16sp"
+            android:text= "4. Data Usage"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size16sp"
+            android:textColor="@color/black"
+            android:text="Your personal data may be used to deliver features, improve services, and personalize the user experience."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size16sp"
+            android:text= "5. Security"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size16sp"
+            android:textColor="@color/black"
+            android:text="We implement security measures to protect your personal information. However, no electronic communication method is entirely secure."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size16sp"
+            android:text= "6. Information Sharing"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size16sp"
+            android:textColor="@color/black"
+            android:text="We will not share your personal information with any third party without your consent."/>
+    </LinearLayout>
+</LinearLayout>
