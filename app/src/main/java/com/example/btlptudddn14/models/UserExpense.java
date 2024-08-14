@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
-public class UserExpense implements Parcelable{
+public class UserExpense implements Parcelable {
     private int id;
     private int userId;
     private int type;
@@ -32,7 +32,7 @@ public class UserExpense implements Parcelable{
         amount = in.readDouble();
     }
 
-    public static final Parcelable.Creator<UserExpense> CREATOR = new Parcelable.Creator<UserExpense>() {
+    public static final Creator<UserExpense> CREATOR = new Creator<UserExpense>() {
         @Override
         public UserExpense createFromParcel(Parcel in) {
             return new UserExpense(in);
@@ -107,4 +107,5 @@ public class UserExpense implements Parcelable{
         parcel.writeDouble(amount);
 
     }
+
 }

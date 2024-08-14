@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".signUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/LLsigUp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size10dp"
+            android:padding="@dimen/size10dp"
+            android:text="Sign Up"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="@dimen/size10dp"
+                android:ems="10"
+                android:hint="@string/fistname"
+                android:inputType="text"
+                android:padding="@dimen/size10dp"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/size10dp"
+                android:ems="10"
+                android:hint="@string/lastname"
+                android:inputType="text"
+                android:padding="@dimen/size10dp"
+                android:textColorHint="@color/gray" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/gmail"
+            android:drawablePadding="@dimen/size10dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:padding="@dimen/size10dp"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/editPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="@dimen/size10dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="text"
+            android:padding="@dimen/size10dp"
+            android:password="true"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/editRepeatPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/key"
+            android:drawablePadding="@dimen/size10dp"
+            android:ems="10"
+            android:hint="@string/repeatPw"
+            android:inputType="text"
+            android:padding="@dimen/size10dp"
+            android:password="true"
+            android:textColorHint="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:text="I agree to the"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10dp"
+                android:text="TERMS"
+                android:textColor="@color/blue500"
+                android:textSize="@dimen/size16sp"
+                android:textStyle="italic">
+
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/blue500"
+            android:text="Sign Up" />
+
+        <Button
+            android:id="@+id/btnBackLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/blue500"
+            android:text="Back" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_changeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/resume"
+        android:title="Change Profile" />
+    <item
+        android:id="@+id/nav_ChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/reset_password"
+        android:title="Change password" />
+    <item
+        android:id="@+id/nav_LogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_logout_blue"
+        android:title="Log out" />
+</menu>
