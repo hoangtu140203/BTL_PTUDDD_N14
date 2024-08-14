@@ -11,6 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.btlptudddn14.R;
+import com.example.btlptudddn14.models.ListTypeTarget;
+
 import java.util.ArrayList;
 
 public class TypeTargetAdapter extends RecyclerView.Adapter<TypeTargetAdapter.Viewholder>{
