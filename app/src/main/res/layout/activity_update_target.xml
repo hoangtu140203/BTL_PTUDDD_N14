@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Kinh phí cần chuẩn bị" />
+            android:text="What amount of money do you plan to prepare for this target?" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Kinh phí đã có" />
+            android:text="What amount of money do you have to prepare for this target?" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,7 +85,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mức độ hoàn thành" />
+            android:text="Complete level" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -99,7 +99,7 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ngày hạn" />
+            android:text="Deadline" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Loại mục tiêu" />
+                android:text="Target type" />
 
             <Spinner
                 android:id="@+id/spinner"
@@ -151,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Mức độ ưu tiên" />
+            android:text="Priority level" />
 
         <SeekBar
             android:id="@+id/seekBar"

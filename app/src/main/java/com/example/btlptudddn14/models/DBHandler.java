@@ -51,7 +51,7 @@ public class DBHandler extends SQLiteOpenHelper {
     private DBHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
+    //tao bang
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTableUsersQuery = "CREATE TABLE " + USERS + " (" +
@@ -60,6 +60,7 @@ public class DBHandler extends SQLiteOpenHelper {
                 EMAIL + " TEXT, " +
                 PASSWORD + " TEXT);";
         db.execSQL(createTableUsersQuery);
+        //tạo bảng Userexpnse
         String createTableUsersExpensesQuery = "CREATE TABLE " + USER_EXPENSES + " (" +
                 ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 USER_ID + " INTEGER, " +
@@ -244,7 +245,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
     }
 
-
+    //them mot expense moi
     public void addExpense(UserExpense expense) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -256,7 +257,7 @@ public class DBHandler extends SQLiteOpenHelper {
         db.insert(USER_EXPENSES, null, cv);
         db.close();
     }
-
+    //cap nhap expnse
     public void updateExpense(UserExpense expense) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -268,7 +269,7 @@ public class DBHandler extends SQLiteOpenHelper {
         String[] whereArgs = {String.valueOf(expense.getId())};
         db.update(USER_EXPENSES, cv, whereClause, whereArgs);
     }
-
+    //xoa expnse
     public void deleteExpense(UserExpense expense) {
         SQLiteDatabase db = this.getWritableDatabase();
         String whereClause = ID + " = ?";
